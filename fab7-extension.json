@@ -1,35 +1,28 @@
 {
   "build": {
-    "command": [
-      "{python}",
-      "scripts/build.py",
-      "--output",
-      "{output}"
-    ],
+    "entrypoint": "src/extension.py",
     "files": [
-      "LICENSE",
       "fab7-extension.json",
-      "plugins/claude/muslin/.claude-plugin/plugin.json",
-      "plugins/claude/muslin/commands/start.md",
-      "plugins/codex/muslin/.codex-plugin/plugin.json",
-      "plugins/codex/muslin/skills/start/SKILL.md",
-      "scripts/build.py",
-      "src/muslin.py"
+      "skills/start/SKILL.md",
+      "src/extension.py",
+      "tests/test_extension.py"
+    ],
+    "skills": [
+      {
+        "name": "start",
+        "source": "skills/start/SKILL.md"
+      }
     ]
   },
   "capabilities": [
-    "smoke-test"
+    "sample"
   ],
   "executable": "muslin",
   "fab7_max_exclusive": "0.3.0",
-  "fab7_min": "0.2.0",
-  "hosts": [
-    "claude",
-    "codex"
-  ],
+  "fab7_min": "0.2.2",
   "name": "muslin",
   "publisher": "fab7hq",
   "repository": "https://github.com/fab7hq/muslin",
-  "schema": 1,
-  "version": "0.1.0"
+  "schema": 2,
+  "version": "0.1.1"
 }
