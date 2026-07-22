@@ -1,0 +1,13 @@
+{
+  "author": {
+    "name": "Fab7"
+  },
+  "commands": "./commands/",
+  "description": "Minimal Fab7 extension-distribution fixture.",
+  "displayName": "Muslin",
+  "homepage": "https://github.com/fab7hq/muslin",
+  "license": "Apache-2.0",
+  "name": "muslin",
+  "repository": "https://github.com/fab7hq/muslin",
+  "version": "0.1.0"
+}

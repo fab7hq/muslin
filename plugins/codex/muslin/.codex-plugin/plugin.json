@@ -1,0 +1,22 @@
+{
+  "author": {
+    "name": "Fab7"
+  },
+  "description": "Minimal Fab7 extension-distribution fixture.",
+  "homepage": "https://github.com/fab7hq/muslin",
+  "interface": {
+    "capabilities": [
+      "Execute the installed Muslin command"
+    ],
+    "category": "Productivity",
+    "defaultPrompt": "Start Muslin and report the observed Fab7 version.",
+    "developerName": "Fab7",
+    "displayName": "Muslin",
+    "shortDescription": "Exercise Fab7 extension distribution."
+  },
+  "license": "Apache-2.0",
+  "name": "muslin",
+  "repository": "https://github.com/fab7hq/muslin",
+  "skills": "./skills/",
+  "version": "0.1.0"
+}
